@@ -1,0 +1,101 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 13,
+        "name": "User is able to validate the fixer API response",
+        "description": "",
+        "id": "test-fixer-get-api;user-is-able-to-validate-the-fixer-api-response;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 564928702,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user sets the base apI request https://api.apilayer.com",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://api.apilayer.com",
+                  "offset": 31
+                }
+              ],
+              "location": "LoginStepDef.user_sets_the_base_apI_request_URL(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 132562340,
+              "error_message": "java.lang.NullPointerException\r\n\tat stepDefinitions.LoginStepDef.user_authenticates_the_API_request_with_token(LoginStepDef.java:43)\r\n\tat ✽.And User authenticates the API request with 23iwW5wPEfmBz5QRO2WTUBpalQg9dyrZ and NOK(login.feature:6)\r\n",
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "User authenticates the API request with 23iwW5wPEfmBz5QRO2WTUBpalQg9dyrZ and NOK",
+            "match": {
+              "arguments": [
+                {
+                  "val": "23iwW5wPEfmBz5QRO2WTUBpalQg9dyrZ",
+                  "offset": 40
+                },
+                {
+                  "val": "NOK",
+                  "offset": 77
+                }
+              ],
+              "location": "LoginStepDef.user_authenticates_the_API_request_with_token(String,String)"
+            },
+            "matchedColumns": [
+              1,
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "User sends the API request to get all the response",
+            "match": {
+              "location": "LoginStepDef.user_sends_the_API_request_to_get_all_the_response()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "User validates the response status is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 38
+                }
+              ],
+              "location": "LoginStepDef.user_validates_the_response_status_is_code(int)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Test fixer Get API",
+    "description": "",
+    "id": "test-fixer-get-api",
+    "keyword": "Feature",
+    "uri": "login.feature"
+  }
+]
